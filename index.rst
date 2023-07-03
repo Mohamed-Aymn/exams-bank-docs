@@ -1,15 +1,15 @@
 Welcome to Exams Bank documentation!
 ====================================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers that
-creates recipes mixing random ingredients.  It pulls data from the `Open Food
-Facts database <https://world.openfoodfacts.org/>`_ and offers a *simple* and
-*intuitive* API.
+**Exams Bank** is a company/enterprise level website specialized in education field 
+scoop, Its main aim is to let students able to examine themselves to gain knowledge 
+by Q&A strategy and to be prepared to face actual exams.
 
-.. note::
-
+.. tip::
    This project is under active development.
 
+.. note::
+   This is a case show, not an open source project to contribute to, some of it is open source but not all of it.
 
 .. toctree::
       :maxdepth: 3

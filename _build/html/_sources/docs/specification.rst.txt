@@ -1,24 +1,5 @@
-
-
-
 Specification
 ====================
 
-This is a new page in my documentation.
-
-Here is some example code:
-
-.. code-block:: python
-
-    def my_function():
-        print('Hello, world!')
-
-
-
-titleone
----------
-
-
-
-titletwo
----------
+We suggest to :download:`download this SRS (software requirement specification) </_static/SRS.docx>`.
+To dive deep into details to enjoy going through the entire process!

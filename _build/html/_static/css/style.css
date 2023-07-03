@@ -1,0 +1,15 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    margin-bottom: 10px;
+}
+ul ul li {
+    margin-left: 20px;
+}
+ul ul ul li {
+    margin-left: 40px;
+    background-color: red;
+}

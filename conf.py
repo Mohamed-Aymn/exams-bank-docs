@@ -10,6 +10,9 @@ import sys
 
 sys.path.insert(0,os.path.abspath(".."))
 
+def setup(app):
+    app.add_css_file('css/custom.css') 
+
 
 project = 'Exams Bank'
 copyright = '2023, Mohamed Aymn Khanfour'
@@ -33,7 +36,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # used theme: https://sphinxthemes.com/themes/awesome
 html_theme = "sphinxawesome_theme"
 html_static_path = ['_static']
-
 
 # html_sidebars = {
 #     '**': ['globaltoc.html']

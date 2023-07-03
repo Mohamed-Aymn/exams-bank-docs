@@ -12,6 +12,7 @@
 <meta content="Special Functionalities | Exams Bank 0.1.0 documentation" name="twitter:title"/>
 <link href="../_static/pygments.css" rel="stylesheet"/>
 <link href="../_static/theme.871137ef162fc5460fb0.css" rel="stylesheet"/>
+<link href="../_static/css/custom.css" rel="stylesheet"/>
 <link href="../search.html" rel="search" title="Search"/>
 <link href="../genindex.html" rel="index" title="Index"/>
 <link href="api.html" rel="prev" title="API"/>
@@ -77,7 +78,7 @@
 <li class="toctree-l1"><a class="reference internal" href="specification.html">Specification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ux.html">UX Design</a></li>
 <li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
-<li class="toctree-l1"><a class="reference internal" href="techstack.html">Teachstack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="techstack.html">Tech stack</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Special Functionalities</a></li>
 </ul>
@@ -104,8 +105,50 @@
 <div id="content" role="main">
 <section id="special-functionalities">
 <h1>Special Functionalities<a class="headerlink" href="#special-functionalities" title="Permalink to this heading">¶</a></h1>
+<section id="styling-methodology-architecture">
+<h2>Styling Methodology/Architecture<a class="headerlink" href="#styling-methodology-architecture" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#styling-methodology-architecture'">¶</a></h2>
+<ul class="simple">
+<li><p>Problem:</p></li>
+</ul>
+<blockquote>
+<div><p>In 2023 modern web era, atomic styling methodology is the dominant styling method, but there is one big problem in using this methodology which is using the right file extension while building these component, should I type styles using Vue or blade components?</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Solution:</p></li>
+</ul>
+<blockquote>
+<div><p>Non of these was correct, but using both was the final choice, But this may led to code duplication (same logic will be typed twice in different languages) right? Yes of course this will led of code duplication in case of atomic styling architecture is not customized specially for this project. Atoms and molecules are styled using OOCSS tailwind styles and daisyUI package, which can be used without barriers in both blade and Vue components, Organisms will be typed using Vue components as they will not be used in server side rendered pages and pages layout will be created using blade components as they will be always server side rendered.</p>
+</div></blockquote>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Code standards are typed in detailed in docs folder in codebase to be able to differentiate between atoms, molecules, organisms and layouts. <a class="reference external" href="https://swagger.io/">Click here to view it</a></p>
+</div>
 </section>
-</div></div>
+<section id="exam-handling-frontend">
+<h2>Exam handling – Frontend<a class="headerlink" href="#exam-handling-frontend" title="Permalink to this heading" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#exam-handling-frontend'">¶</a></h2>
+<ul class="simple">
+<li><p>Problem:</p></li>
+</ul>
+<blockquote>
+<div><p>In case of accidentally browser refresh in exam page, all user’s answers will be lost,</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Solution:</p></li>
+</ul>
+<blockquote>
+<div><p>IndexedDB client side storage is used to store exam data to avoid data loss, indexedDB is used instead of using local/session storage due to the need of storing structured data  (several pieces of info about each question with keys)</p>
+</div></blockquote>
+<p>sequence diagram here</p>
+</section>
+</section>
+</div></div><aside class="hidden text-sm xl:block" id="right-sidebar">
+<div class="sticky top-16 -mt-10 max-h-[calc(var(--vh)-4rem)] overflow-y-auto pt-6 space-y-2"><p class="font-medium">On this page</p>
+<ul>
+<li><a :data-current="activeSection === '#styling-methodology-architecture'" class="reference internal" href="#styling-methodology-architecture">Styling Methodology/Architecture</a></li>
+<li><a :data-current="activeSection === '#exam-handling-frontend'" class="reference internal" href="#exam-handling-frontend">Exam handling – Frontend</a></li>
+</ul>
+</div>
+</aside>
 </main>
 </div>
 </div><footer class="py-6 border-t border-border md:py-0">
