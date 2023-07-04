@@ -5,11 +5,11 @@ Welcome to Exams Bank documentation!
 scoop, Its main aim is to let students able to examine themselves to gain knowledge 
 by Q&A strategy and to be prepared to face actual exams.
 
-.. tip::
+.. note::
    This project is under active development.
 
 .. note::
-   This is a case show, not an open source project to contribute to, some of it is open source but not all of it.
+   This is a case show, not an open source project to contribute to, some of it is open source but may be not all of it.
 
 .. toctree::
       :maxdepth: 3
