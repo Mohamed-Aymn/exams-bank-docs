@@ -21,5 +21,4 @@ Exam handling – Frontend
 * 	Solution:
     IndexedDB client side storage is used to store exam data to avoid data loss, indexedDB is used instead of using local/session storage due to the need of storing structured data  (several pieces of info about each question with keys)
 
-.. TODO:
-sequence diagram here
+.. image:: /_static/communicationDiagram.svg
